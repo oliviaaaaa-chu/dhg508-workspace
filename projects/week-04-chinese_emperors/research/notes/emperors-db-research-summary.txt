@@ -1,0 +1,138 @@
+===============================================================================
+CHINESE EMPERORS DATABASE — RESEARCH SUMMARY
+projects/chinese_emperors/  ·  DHG508 Week 4  ·  2026-09-29
+===============================================================================
+
+WHAT THIS IS
+------------
+A relational database of every ruler of China from Qin Shi Huang (221 BCE)
+to the abdication of Puyi (12 February 1912 CE), built for the Week 4
+assignment: "a real database, and a progressive skill". Every row carries a
+source (document + juan) and a note for anything uncertain. Built entirely
+through opencode, which explained each step as it went.
+
+WHAT WAS BUILT
+--------------
+  3 tables, 3 foreign keys, 359 rows in total:
+
+    dynasties   44 rows   states from Qin 秦 to Qing 清, with years, capitals
+    rulers     280 rows   every sovereign, Chinese original beside the
+                          romanised name, temple/posthumous names, reign
+                          years, predecessor link
+    era_names   35 rows   年号, keyed to rulers (full for Ming/Qing,
+                          selected icons for Han/Tang/Song)
+
+  Foreign keys:
+    rulers.dynasty_id      -> dynasties.id
+    rulers.predecessor_id  -> rulers.id        (self-reference)
+    era_names.ruler_id     -> rulers.id
+
+  Rebuildable: python code/build_db.py  (foreign keys ON, seeds in order,
+  never edit old seed files — add a new one and rerun).
+
+SCOPE AND COUNTING RULES (full version in research/design/design_doc.md)
+------------------------------------------------------------------------
+  - Time range: 221 BCE to 1912 CE. Shang and Zhou kings are out of scope
+    (they were kings 王, not emperors 皇帝 — the title begins with
+    Qin Shi Huang in 221 BCE).
+  - Included: rival states in divided periods, deposed and short-reign
+    rulers, child emperors, Wu Zetian (her own state Wu Zhou 690-705).
+  - Excluded: regents who never took the title (Empress Lü, Dorgon, Cixi).
+  - Date convention: integers, negative = BCE, no year 0.
+  - The result: 280 rulers across 44 states — the answer to "how many
+    emperors" depends entirely on the counting rules, which is the point.
+
+THE DATA, BY STATE (rulers per state)
+-------------------------------------
+  Qin 秦 3 · W Han 西汉 13 · Xin 新 1 · E Han 东汉 15
+  Three Kingdoms: Wei 魏 5 · Shu Han 蜀汉 2 · Wu 吳 4
+  Jin 晋: W 4 + E 11
+  Northern: N Wei 北魏 15 · E Wei 东魏 1 · W Wei 西魏 3 · N Qi 北齊 6 ·
+            N Zhou 北周 5
+  Southern: Liu Song 劉宋 9 · S Qi 南齊 7 · Liang 梁 5 · Chen 陳 5
+  Sui 隋 4 (incl. rival claimant Yang Tong) · Tang 唐 21 · Wu Zhou 武周 1
+  Five Dynasties: 后梁 3 · 后唐 4 · 后晋 2 · 后汉 2 · 后周 3
+  Ten Kingdoms: 楊吳 3 · 南唐 3 · 吳越 5 · 前蜀 2 · 后蜀 2 · 南漢 4 ·
+                閩 6 · 楚 6 · 南平 5 · 北漢 4
+  Liao 遼 9 · N Song 北宋 9 · S Song 南宋 9 · W Xia 西夏 10 · Jin 金 10
+  Yuan 元 11 · Ming 明 16 · Qing 清 12
+
+FINDINGS WORTH SHOWING IN THE DEMO
+----------------------------------
+  1. Longest reigns: Kangxi 玄烨 61 years; Qianlong 弘历 61 (abdicated 1796,
+     kept power to 1799); Han Wudi 刘彻 54.
+  2. Shortest: Wanyan Chenglin 完颜承麟 — made emperor in the morning the
+     Jurchen Jin fell, dead by the afternoon (1234).
+  3. Youngest: Liu Long 刘隆 enthroned ~100 days old (106 CE); Puyi at 2
+     (1908).
+  4. Succession crosses dynasties: Cao Pi's predecessor is Han Xiandi, Li
+     Yuan's is Yang Tong, Zhu Wen's is the last Tang boy — the "abdication
+     coup" is a repeatable pattern the predecessor_id chain makes visible.
+     23 cross-dynasty links, by design.
+  5. Name traps (critical for the quiz questions): three emperors romanised
+     Liu Yu (刘裕 / 刘彧 / 刘昱), two Sima Yan (司马炎 / 司马衍), two Zhao Xu
+     (赵顼 / 赵煦), two Li Heng (李亨 / 李恒), two Xuanzong (玄宗 / 宣宗),
+     two Huizong (宋徽宗 / 元惠宗).
+  6. Kings vs emperors: most Ten Kingdoms rulers were kings 王; Ziying,
+     Ruzi Ying and Tianshundi are flagged rows that a naive count would miss
+     or miscount.
+
+SOURCES
+-------
+  The standard dynastic histories (二十四史) via ctext.org, cited by juan on
+  every row: Shiji 史记 (Qin), Hanshu 汉书, Hou Hanshu 后汉书, Sanguozhi
+  三国志, Jinshu 晋书, Weishu 魏书, Songshu 宋书, Nan Qi shu 南齐书,
+  Liangshu 梁书, Chenshu 陈书, Suishu 隋书, Jiu/Xin Tangshu 旧唐书/新唐书,
+  Jiu/Xin Wudai shi, Songshi 宋史 (also the Xi Xia annals, juans 480-485),
+  Liaoshi 辽史, Jinshi 金史, Yuanshi 元史, Mingshi 明史, Qingshi gao 清史稿.
+  Rows still marked "(to verify)" carry the doubt in their note column —
+  they are the material for the 20-row spot-check.
+
+ERRORS FOUND AND FIXED ALONG THE WAY (candidate improvement-log entries)
+------------------------------------------------------------------------
+  1. UNIQUE constraint failed on dynasties.name — two different states both
+     named "Wu" (Three Kingdoms 吳 and Ten Kingdoms 楊吳). Fixed by renaming
+     the latter Yang Wu.
+  2. UTF-8 mojibake: editing seed files through a PowerShell
+     Get-Content/Set-Content round-trip read the files in the ANSI codepage
+     and corrupted every Chinese character in two seed files
+     (赵匡胤 -> èµµåŒ¡èƒ¤). Caught by the verify script's Chinese queries
+     returning nothing. Fixed by rewriting both files in the editor; added
+     code/check_encoding.py which now scans every text column (0 bad
+     cells). Rule: never round-trip UTF-8 files through shell string ops.
+  3. Zhu Wen's predecessor link was NULL; set to the last Tang emperor
+     (id 139) so "who followed Li Zhu" now correctly returns 朱温.
+
+  Console note: print Chinese with PYTHONIOENCODING=utf-8 on this machine
+  (the default cp1252 console crashes on 汉字).
+
+WHAT REMAINS FOR WEEK 4
+-----------------------
+  [x] Spot-check 20 random rows (seed 20260929) — 20/20 passed; the
+      full-database sweep found and fixed 9 real errors
+      (spot-check-20-sample.csv + spot-check-20-log.md in research/notes/)
+  [ ] Progressive skill: WRITTEN — SKILL.md (short entry point) +
+      skills/tables.md, skills/queries.md, skills/conventions.md +
+      skills/adding-data.md (second skill, hand-over); verified with
+      code/test_skill.py (challenge 3 — needs the demo to sign off)
+  [x] Rubric + test: rubric.md (4 criteria, 0-2 each, invention = auto
+      fail) + test-questions.md (12 questions, all six required types,
+      12/12 pass; re-run cold in the demo)
+  [x] improvement-log.md: 5 entries (mojibake, missing Tang->Liang link,
+      Yang Tong year, restored-emperor chain, duplicate-name build) —
+      challenge 5 done, 3 required
+
+ALL FOUR WEEK-4 CHALLENGES COMPLETE (1-5). Remaining before the demo:
+re-run the test sheet cold through the live agent; read the "(to verify)"
+rows against the cited juans on ctext.org.
+
+FILE MAP
+--------
+  code/schema.sql                    table definitions
+  code/seed_01..14*.sql              data, one batch per file, in load order
+  code/build_db.py                   rebuild from scratch
+  code/verify.py, check_encoding.py  verification
+  artifacts/chinese_emperors.db      the database (git-ignored)
+  research/design/design_doc.md      counting rules, date convention, schema
+  research/journal/research_journal.md   dated progress + error log
+===============================================================================

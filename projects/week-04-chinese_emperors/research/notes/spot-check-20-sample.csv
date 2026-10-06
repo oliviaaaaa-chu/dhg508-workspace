@@ -1,0 +1,21 @@
+﻿table,id,name,name_cn,year_start,year_end,capital,source,note
+dynasties,1,Qin,秦,-221,-206,Xianyang 咸阳,"Shiji 史记, juan 6 (ctext.org)",First state to use the title huangdi 皇帝; collapsed three years after Shi Huang's death
+dynasties,5,Wei,魏,220,266,Luoyang 洛阳,"Sanguozhi 三国志, Wei shu (ctext.org)",Cao Pi received the abdication of Han Xiandi in the 12th month of 220
+dynasties,43,Ming,明,1368,1644,"Nanjing 南京, Beijing 北京","Mingshi 明史, annals (ctext.org)",Zhu Yuanzhang; capital moved to Beijing by Yongle; ended with Li Zicheng's capture of Beijing
+dynasties,27,Yang Wu,楊吳,902,937,Jiangdu 江都 (Yangzhou),"Xin Wudai shi 新五代史, annals (ctext.org)",Yang Xingmi's state; rulers were mostly kings; absorbed by Southern Tang 937
+rulers,188,Gao Baorong,高保融,,King Zhenyi 贞懿王,948,960,35,187,"Xin Wudai shi 新五代史, annals juan 69 (ctext.org)",Backed the Song from the start
+rulers,265,Zhu Yijun,朱翊钧,Shenzong 神宗,Xian Huangdi 显皇帝,1572,1620,43,264,"Mingshi 明史, annals juan 20-22 (ctext.org)","Wanli era — 48 years, ~30 of them refusing to see ministers; the Korean war against Hideyoshi 1592-1598; the Mingshi verdict: ""Ming fell in the Wanli reign"" (明之亡，实亡于神宗)"
+rulers,133,Li Ang,李昂,Wenzong 文宗,Yuansheng Zhaoxian 元圣昭献孝皇帝,826,840,20,132,"Jiu Tangshu 旧唐书, annals juan 17 (ctext.org)",The Sweet Dew incident 835: eunuchs massacred the court; he died a prisoner of his own guards
+rulers,235,Wanyan Liang,完颜亮,,Prince Hailing 海陵王 (deposed),1149,1161,41,234,"Jinshi 金史, annals juan 5 / juan 129 (ctext.org)","Usurper, capital to Yanjing 1153 (now Beijing), destroyed by his own officers on the Yangzi during the invasion of Song 1161; posthumously denied the imperial title"
+rulers,60,Tuoba Si,拓跋嗣,Taizong 太宗,Mingyuan 明元帝,409,423,10,59,"Weishu 魏书, annals juan 3 (ctext.org)",Took the Henan buffer from Liu Song 422-423
+rulers,219,Zhao Xian,赵㬎,,Gongdi 恭皇帝 (Yingguo Gong 瀛国公),1274,1276,39,218,"Songshi 宋史, annals juan 47 (ctext.org)","Surrendered Lin'an at 4; became a Tibetan Buddhist monk in the north — later rumour linked his line to Yuan Shundi (recorded, not believed)"
+rulers,106,Xiao Gang,萧纲,Taizong 太宗,Jianwendi 简文皇帝,549,551,17,105,"Liangshu 梁书, annals juan 4 (ctext.org)","Puppet of Hou Jing; forced to abdicate, killed 551. Famous as palace-style poet"
+rulers,178,Wang Xi,王曦 (written 王延羲 before 939),Jingzong 景宗,none,939,943,33,177,"Xin Wudai shi 新五代史, annals juan 68 (ctext.org)",Renamed himself from Yanxi 延羲 to Xi 曦 in 939; killed 943. Temple name to verify against the cited juan
+rulers,245,Ayurbarwada,爱育黎拔力八达 (Buyantu Khan 普颜笃汗),Renzong 仁宗,Shengwen Qinxiao 圣文钦孝皇帝,1311,1320,42,244,"Yuanshi 元史, annals juan 25-27 (ctext.org)",Restored the civil-service examination 1313 after 40 years — with a Mongol quota system; broke the succession covenant in favour of his own son
+rulers,16,Liu Ying,刘婴,,"Ruzi Ying 孺子婴 (crown prince, not huangdi)",6,9,2,15,"Hanshu 汉书, juan 99 (ctext.org)","Enthroned as crown prince at age 1 with Wang Mang as ""acting emperor"" (摄皇帝); never took the imperial title. Included by rule 2, flagged here. Wang Mang took the throne in 9 CE"
+rulers,259,Zhu Qiyu,朱祁钰,Daizong 代宗,Jing Huangdi 景皇帝,1449,1457,43,258,"Mingshi 明史, annals juan 11 (ctext.org)",The Jingtai reign that won the defence of Beijing while his brother was captive; buried outside the Ming tombs
+rulers,59,Tuoba Gui,拓跋珪,Taizu 太祖,Daowu 道武帝,386,409,10,,"Weishu 魏书, annals juan 2 (ctext.org)","Re-founded the Tuoba state as Wei at Shengle, then Pingcheng; killed by his son Tuoba Shao"
+rulers,145,Li Siyuan,李嗣源,Mingzong 明宗,Shengde 和武钦孝皇帝,926,933,23,144,"Jiu Wudai shi 旧五代史, annals juan 35-44 (ctext.org)",Adopted son of Li Keyong; the one decent reign of the Five Dynasties
+rulers,256,Zhu Gaochi,朱高炽,Renzong 仁宗,Zhao Huangdi 昭皇帝,1424,1425,43,255,"Mingshi 明史, annals juan 8 (ctext.org)",Ten months of reversal of his father's harshness
+era_names,25,Chongde,崇德,1636,1643,270,"Qingshi gao 清史稿, annals juan 2-3","The era from which the state is called Qing 清 (before: Tiancong 天聪 1627-1636, khan years)"
+era_names,34,Guangxu,光绪,1875,1908,279,"Qingshi gao 清史稿, annals juan 23-25",Hundred Days 1898 under this era
