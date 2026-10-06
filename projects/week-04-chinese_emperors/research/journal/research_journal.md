@@ -4,6 +4,27 @@
 
 ## 2026-10-06
 
+### DeepSeek key registered, ask-the-database app built (Week 5, challenges 3-4)
+
+- Challenge 3: DeepSeek API key created at platform.deepseek.com and stored
+  as the `DEEPSEEK_API_KEY` environment variable (user level) — never in a
+  file that goes into Git. Verified with a minimal live call.
+- Challenge 4: new app at `code/app/` — `server.py` (stdlib only) +
+  `static/index.html`. The page takes a question in English or Traditional
+  Chinese; the server retrieves matching rows from the three trad CSV
+  exports (name/title/year/era matching, then each hit ruler's dynasty,
+  eras, predecessor and successors), and calls the real deepseek-chat API
+  with the rubric rules and ONLY those rows. The answer comes back cited
+  [id: source], with the exact rows shown on the page for checking.
+- Where the demo had its fixture (saved model-response.json returned for
+  every photo), this app makes the real API call (`ask_deepseek()`).
+- Live tests: "Who ruled in 1127?" -> 15 rows, four rulers by state, all
+  cited; "Who followed 嬴政?" -> 3 rows, 胡亥 cited [2: Shiji, juan 6].
+  Also observed the rubric working under failure: a test with broken
+  character encoding produced zero rows and the model answered "the data
+  has no answer" instead of filling in from its own knowledge.
+- `code/test_skill.py` still passes (44/280/35, all patterns run).
+
 ### Skill reorganised into an index and three documents (Week 5, challenge 1)
 
 - Restructured the skill per the Week 5 instructions: `SKILL.md` is now a

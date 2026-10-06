@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ask the Chinese Emperors Database</title>
+<style>
+  :root { --ink:#2b2118; --paper:#faf6ee; --accent:#8c2f2f; --line:#d8cdb8; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Georgia, "Times New Roman", serif; background: var(--paper); color: var(--ink); }
+  header { background: var(--accent); color:#faf6ee; padding: 1.2rem 1.5rem; }
+  header h1 { margin:0; font-size:1.4rem; font-weight:600; letter-spacing:.5px; }
+  header p { margin:.3rem 0 0; font-size:.9rem; opacity:.9; }
+  main { max-width: 760px; margin: 0 auto; padding: 1.5rem; }
+  .ask { display:flex; gap:.6rem; }
+  .ask input { flex:1; font: inherit; font-size:1.05rem; padding:.7rem .9rem; border:1px solid var(--line); border-radius:6px; background:#fff; }
+  .ask button { font: inherit; font-size:1.05rem; padding:.7rem 1.4rem; background:var(--ink); color:var(--paper); border:none; border-radius:6px; cursor:pointer; }
+  .ask button:hover { background:#43332a; }
+  .ask button:disabled { opacity:.5; cursor: wait; }
+  .hint { font-size:.85rem; color:#6b5d4d; margin:.6rem 0 0; }
+  .hint code { background:#efe7d8; padding:.1rem .35rem; border-radius:4px; }
+  #status { margin-top:1rem; font-size:.9rem; color:var(--accent); min-height:1.2em; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:8px; padding:1.1rem 1.3rem; margin-top:1rem; }
+  .badge { display:inline-block; font-size:.75rem; letter-spacing:.4px; text-transform:uppercase; background:#efe7d8; color:var(--accent); border-radius:4px; padding:.15rem .5rem; margin-bottom:.7rem; }
+  #answer { white-space: pre-wrap; line-height:1.65; font-size:1.02rem; }
+  #error { color: var(--accent); }
+  details { margin-top:1rem; border-top:1px dashed var(--line); padding-top:.7rem; }
+  summary { cursor:pointer; font-size:.9rem; color:#6b5d4d; }
+  #rows { font-family: Consolas, monospace; font-size:.78rem; background:#f4efe4; padding:.8rem; border-radius:6px; overflow-x:auto; white-space:pre-wrap; margin-top:.6rem; }
+  footer { text-align:center; font-size:.8rem; color:#8a7c69; padding:1rem 0 2rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Ask the Chinese Emperors Database</h1>
+  <p>221 BCE – 1912 CE · 44 dynasties · 280 rulers · 35 era names — the model may answer only from the rows shown below.</p>
+</header>
+<main>
+  <div class="ask">
+    <input id="q" type="text" autocomplete="off"
+           placeholder="e.g. Who ruled in 1127? / Who followed 嬴政? / How many emperors?">
+    <button id="go">Ask</button>
+  </div>
+  <p class="hint">Try <code>Who was the longest-reigning emperor?</code> · <code>萬曆是誰的年號？</code> · <code>Which Liu Yu is which?</code></p>
+  <div id="status"></div>
+  <div class="card" id="card" hidden>
+    <span class="badge" id="badge">model: deepseek-chat</span>
+    <div id="answer"></div>
+    <details id="rowsbox">
+      <summary id="rowsummary">rows used</summary>
+      <div id="rows"></div>
+    </details>
+  </div>
+</main>
+<footer>Week 5 app · DHG508 · answers are grounded in the database; every claim carries its row id</footer>
+<script>
+const q = document.getElementById("q");
+const go = document.getElementById("go");
+const status = document.getElementById("status");
+const card = document.getElementById("card");
+const answer = document.getElementById("answer");
+const rows = document.getElementById("rows");
+const rowsummary = document.getElementById("rowsummary");
+
+async function ask() {
+  const question = q.value.trim();
+  if (!question) return;
+  go.disabled = true;
+  status.textContent = "searching the database, then asking deepseek-chat…";
+  card.hidden = true;
+  try {
+    const r = await fetch("/api/ask", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({question})
+    });
+    const data = await r.json();
+    if (!r.ok) throw new Error(data.error || r.statusText);
+    answer.id = "answer";
+    answer.textContent = data.answer;
+    answer.style.color = "";
+    rowsummary.textContent = `rows used (${data.rows.length}) — the only data the model saw`;
+    rows.textContent = JSON.stringify(data.rows, null, 1);
+    card.hidden = false;
+    status.textContent = "";
+  } catch (err) {
+    status.textContent = "";
+    answer.textContent = err.message;
+    answer.style.color = "#8c2f2f";
+    card.hidden = false;
+  } finally {
+    go.disabled = false;
+    q.focus();
+  }
+}
+
+go.addEventListener("click", ask);
+q.addEventListener("keydown", e => { if (e.key === "Enter") ask(); });
+q.focus();
+</script>
+</body>
+</html>
