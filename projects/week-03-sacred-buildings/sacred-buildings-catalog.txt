@@ -1,0 +1,145 @@
+WEEK 03 - SACRED BUILDINGS CATALOG (DHG508 Critical Digital History)
+==============================================================================
+Total buildings: 10 | Source: demo-buildings CSVs, week-03
+
+------------------------------------------------------------------------------
+ID:            BLD-009
+BUILDING:      Hagia Sophia (Ayasofya)
+DATE:          537 CE (built); 1453 (converted to mosque); 1935 (museum); 2020 (re-converted to mosque)
+FACT:          Cathedral of the Byzantine Empire for ~900 years; its 31 m dome was the largest interior space in the world for nearly 1,000 years; minarets added after the Ottoman conquest.
+NAMES/PLACES:  Istanbul (formerly Constantinople), Türkiye; commissioned by Emperor Justinian I; architects Anthemius of Tralles and Isidore of Miletus; Sultan Mehmed II converted it in 1453.
+SOURCE:        User-attached photograph (800x457 px), view from the Bosphorus side; metadata compiled 2026-09-23.
+IMAGE:         images/bld_009.jpg
+------------------------------------------------------------------------------
+ID:            BLD-010
+BUILDING:      St. Peter’s Basilica (Basilica di San Pietro in Vaticano)
+DATE:          1506–1626 (built); consecrated 1626; on site of the 4th-century Constantinian basilica (c. 360)
+FACT:          Largest church in the world (~15,160 m² interior); Michelangelo designed its ~136.6 m dome; the facade inscription reads “IN HONOREM PRINCIPIS APOST” (In honour of the Prince of Apostles); Bernini’s colonnades embrace St. Peter’s Square, where an Egyptian obelisk (c. 25 m, brought to Rome by Caligula) stands.
+NAMES/PLACES:  Vatican City, Rome, Italy; architects: Bramante, Michelangelo, Maderno, Bernini; built over the tomb of the Apostle St. Peter; facade by Carlo Maderno under Pope Paul V.
+SOURCE:        User-attached photograph (~1600x1000 px), view across St. Peter’s Square; metadata compiled 2026-09-23.
+IMAGE:         images/bld_010.jpg
+------------------------------------------------------------------------------
+ID:            BLD-011
+BUILDING:      Church of the Holy Sepulchre (also Basilica of the Resurrection)
+DATE:          First built 335 CE under Constantine I; destroyed 1009 and rebuilt 1048; major domes/reconstruction 1149 (Crusader) and 1555; present rotunda dome repaired 1997
+FACT:          Shares custody among six Christian communities (Greek Orthodox, Armenian Apostolic, Roman Catholic/Franciscan, plus Coptic, Syriac, Ethiopian); an immovable ladder on the facade has remained since at least 1757 under the Status Quo; two domes mark the rotunda (Aedicule of the Tomb) and the Katholikon (Crucifixion site, Golgotha).
+NAMES/PLACES:  Jerusalem, Old City (Christian Quarter), Israel/Palestine, on Golgotha (Calvary); commissioned by Constantine I and Helena of Constantinople; rebuilt by Byzantine Constantine IX Monomachos (1048) and by the Crusaders (1149); administered under the Ottoman-era Status Quo.
+SOURCE:        User-attached aerial photograph (~1280x853 px), rooftop view from the southeast over the two domes and bell tower; metadata compiled 2026-09-23.
+IMAGE:         images/bld_011.jpg
+------------------------------------------------------------------------------
+ID:            BLD-012
+BUILDING:      Dome of the Rock (Qubbat al-Ṣakhra), with the Dome of the Chain (Qubbat al-Silsila) in the foreground
+DATE:          Completed 691–692 CE under the Umayyad Caliph Abd al-Malik; dome and mosaics last restored 1993 (gold leaf donated by King Hussein of Jordan)
+FACT:          One of the oldest surviving works of Islamic architecture; an octagonal shrine built over the Foundation Stone, enclosed by a wooden dome (~20 m diameter, ~35 m high) originally sheathed in gold; its exterior is clad in Ottoman-era Iznik tiles; not a congregational mosque but a shrine-pilgrimage monument.
+NAMES/PLACES:  Haram al-Sharif / Temple Mount, Old City of Jerusalem; commissioned by Umayyad Caliph Abd al-Malik ibn Marwan; earlier domes replaced under the Crusaders and Ottoman Sultan Suleiman the Magnificent (Iznik tiling, 1545–56).
+SOURCE:        User-attached photograph (~731x411 px), view across the platform with the open-air Dome of the Chain arcade in front; metadata compiled 2026-09-23.
+IMAGE:         images/bld_012.jpg
+------------------------------------------------------------------------------
+ID:            BLD-013
+BUILDING:      Harmandir Sahib (the Golden Temple), Darbar Sahib
+DATE:          First built 1588–1604 (Guru Arjan Dev, foundation laid by Sufi saint Mian Mir); destroyed and rebuilt repeatedly in the 18th century; marble and gilding by Maharaja Ranjit Singh 1809–1830
+FACT:          The holiest Sikh gurdwara; built deliberately lower than surrounding buildings and with four entrances (one on each side) to symbolise openness to all faiths and castes; its upper floors are covered in ~750 kg of gold; it stands in the middle of the Amrit Sarovar (“Pool of Nectar”), with pilgrims bathing in the sacred tank; the Guru Granth Sahib is enthroned inside by day.
+NAMES/PLACES:  Amritsar, Punjab, India; founded by the 4th Sikh Guru Ram Das and completed under Guru Arjan Dev; gilded by Maharaja Ranjit Singh; adjacent Akal Takht and the causeway from the Guru’s Bridge connect it to the parikrama walkway.
+SOURCE:        User-attached photograph (~2000x1333 px), view across the Amrit Sarovar reflecting the shrine; metadata compiled 2026-09-23.
+IMAGE:         images/bld_013.jpg
+------------------------------------------------------------------------------
+ID:            BLD-014
+BUILDING:      Bayon (temple-mountain of Angkor Thom)
+DATE:          Built late 12th century – early 13th century (c. 1190–1210) under King Jayavarman VII; abandoned after the 15th century; conserved via the “anastyphication” project completed 2012
+FACT:          State temple of the Mahayana Buddhist king Jayavarman VII; famed for ~200 serene smiling stone faces (of the bodhisattva Avalokiteśvara with the king’s features, some argue Lokesvara or Brahma) on 37 surviving towers of an original 49; galleries carved with ~11,000 figures in bas-reliefs of daily life and battles; later overlaid with Hindu Shaivite imagery under Jayavarman VIII.
+NAMES/PLACES:  Angkor Thom, Siem Reap, Cambodia; commissioned by King Jayavarman VII (r. c. 1181–1218), the only Khmer temple built as an official state temple dedicated to Buddha; studied and restored by the École française d’Extrême-Orient (EFEO) within the Angkor World Heritage Site (UNESCO, 1992).
+SOURCE:        User-attached photograph (~1000x563 px), frontal view from the east with wooden stairway and monk in saffron robe; metadata compiled 2026-09-23.
+IMAGE:         images/bld_014.jpg
+------------------------------------------------------------------------------
+ID:            BLD-015
+BUILDING:      Borobudur (Barabudur) — the Great Stupa of Central Java
+DATE:          Built c. 780–840 CE under the Śailendra dynasty; buried under volcanic ash and jungle after c. 14th century; restored in three campaigns, 1814–, 1907–11 (Theodore van Erp) and 1973–83 (UNESCO)
+FACT:          The largest Buddhist monument in the world (~15,000 m² base, ~35 m high, ~2 million cubic feet of andesite); a three-dimensional mandala of nine stacked platforms — six square galleries with 2,672 relief panels and 504 Buddha statues, crowned by 72 perforated stone stupas each enclosing a Buddha, around the central dome; abandoned after Islamisation of Java and hidden for centuries until Raffles’ era (1814).
+NAMES/PLACES:  Borobudur, Magelang Regency, Central Java, Indonesia (Kedu Plain, between the volcanoes Merapi and Merbabu, near Muntilan/Kedu); built under King Samaratungga of the Śailendra dynasty, attributed to the architect Gunadharma; restored by Theodore van Erp and UNESCO-led international team; inscribed as UNESCO World Heritage Site in 1991.
+SOURCE:        User-attached photograph (~2000x1333 px), view from the lawn on the plain with trees framing the monument; metadata compiled 2026-09-23.
+IMAGE:         images/bld_015.jpg
+------------------------------------------------------------------------------
+ID:            BLD-016
+BUILDING:      Cathedral of Christ the Saviour (Khram Khrista Spasitelya)
+DATE:          Original built 1839–1883 (consecrated 1883); demolished 1931 under Stalin; rebuilt 1995–2000
+FACT:          The tallest Orthodox Christian church in the world (103 m); built as a thanksgiving for the 1812 defeat of Napoleon; its neo-Russian design by Konstantin Ton revived 16th–17th-century Muscovite forms; the original was dynamited in 1931 to make way for the unbuilt Palace of the Soviets, and the site was a swimming pool (Moskva pool, 1960–94) before reconstruction funded partly by public donations; the current interior features modern frescoes and white marble cladding.
+NAMES/PLACES:  Kropotkinskaya Embankment, central Moscow, Russia, by the Moskva River; designed by Konstantin Ton, decorated by painters including Vasily Surikov; original consecrated in presence of Tsar Alexander III; rebuilt under Moscow mayor Yuri Luzhkov and Patriarch Alexy II.
+SOURCE:        User-attached photograph (~458x421 px), frontal view from the bridge/patriarshy footpath across the Moscow River; metadata compiled 2026-09-23.
+IMAGE:         images/bld_016.jpg
+------------------------------------------------------------------------------
+ID:            BLD-017
+BUILDING:      Western Wall (Ha-Kotel Ha-Maʿaravi, “Wailing Wall”), with the Dome of the Rock visible above
+DATE:          Wall built 20 BCE (Herod the Great’s expansion of the Second Temple, with later Herodian/Umayyad/Ottoman courses); became a prayer site after the Temple’s destruction in 70 CE; open as a plaza since 1967
+FACT:          A 488 m-long western retaining wall of Herod’s Temple Mount, the holiest site where Jews may pray; the prayer plaza holds the tradition of inserting written petitions into the cracks between the ashlars; at sunset the golden Dome of the Rock (Qubbat al-Ṣakhra, 691 CE) rises behind, making this one of the most contested and layered sacred spaces on earth; adhan call to prayer from a nearby minaret mingles with Jewish evening prayers.
+NAMES/PLACES:  Old City of Jerusalem (Jewish Quarter, Western Wall Plaza), Israel/Palestine; built by Herod the Great; venerated in Judaism as the closest accessible point to the ancient Holy of Holies; administered by the Western Wall Heritage Foundation; above it, the Haram al-Sharif/Temple Mount with the Umayyad Dome of the Rock.
+SOURCE:        User-attached photograph (~1024x683 px), dusk panorama from the Jewish Quarter across the prayer plaza; metadata compiled 2026-09-23.
+IMAGE:         images/bld_017.jpg
+------------------------------------------------------------------------------
+ID:            BLD-018
+BUILDING:      Potala Palace (pho-brang Potala), winter residence of the Dalai Lamas
+DATE:          First palace built 637 CE by Songtsen Gampo; present structure begun 1645 under the Fifth Dalai Lama (White Palace finished 1648, Red Palace 1690–1694); UNESCO World Heritage Site since 1994; museum since 1959
+FACT:          Named after Mount Potalaka, the mythical abode of the bodhisattva Avalokiteśvara; the world’s highest ancient palace (3,700 m above sea level), rising 117 m over 13 storeys with over 1,000 rooms and 200,000+ statues; its walls slope inward ~5 degrees for stability; contains the gilded stupas (tombs) of the Dalai Lamas, including the Fifth’s, covered in ~3,721 kg of gold; the White Palace housed the Dalai Lama’s government, the Red Palace religion and study.
+NAMES/PLACES:  Red Hill (Marpo Ri), Lhasa, Tibet Autonomous Region, China; begun by the Fifth Dalai Lama (Ngawang Lobsang Gyatso) with regent Sangye Gyatso completing the Red Palace; traditional seat of the Gelug school of Tibetan Buddhism; inscribed by UNESCO within the Historic Ensemble of the Potala Palace, Lhasa.
+SOURCE:        User-attached photograph (~548x365 px), view from the south across Lhasa city; metadata compiled 2026-09-23.
+IMAGE:         images/bld_018.jpg
+
+==============================================================================
+==============================================================================
+PROVENANCE / SOURCES OF INFORMATION
+Compiled 2026-09-23 by the AI assistant (GLM, via opencode). The 'source' field of
+each record cites the user-attached photograph (visual description). The DATE,
+FACT and NAMES/PLACES rows derive from the assistant's general knowledge of the
+standard scholarship, whose authorities are listed per field below (not browsed
+live; no text quoted). Original records: 508-coursework\week-03\demo-buildings CSVs.
+
+PER-FIELD SOURCES OF INFORMATION (date / fact / names-places):
+
+  BLD-009 Hagia Sophia
+    DATE source:          Chronology of construction/conversions in Encyclopaedia Britannica 'Hagia Sophia' and UNESCO 'Historic Areas of Istanbul' (537 CE; 1453; 1935; 2020).
+    FACT source:          Architectural description in Britannica and UNESCO inscription documentation (Byzantine engineering, minarets, buttresses).
+    NAMES/PLACES source:  Historical records of Byzantine emperors Justinian and Ottoman sultans (Mehmed II) as summarized by Britannica; UNESCO listing for Istanbul.
+
+  BLD-010 St. Peter's Basilica
+    DATE source:          Construction chronology (1506-1626) in Britannica 'St. Peter's Basilica' and Fabbrica di San Pietro records.
+    FACT source:          Dimensions and architectural scholarship in Britannica and official basilica documentation (stpetersbasilica.info).
+    NAMES/PLACES source:  Papal history (Julius II, Paul V, Michelangelo, Bernini) via Britannica; UNESCO 'Vatican City' listing.
+
+  BLD-011 Church of the Holy Sepulchre
+    DATE source:          Destruction/construction dates (335 CE; 1048; 1149; 1997) in Britannica 'Church of the Holy Sepulchre' and Crusader-era chronicles.
+    FACT source:          Architectural history (Constantinian rotunda, Crusader church, Status Quo) in Britannica and Custody of the Holy Land publications.
+    NAMES/PLACES source:  Historical documentation (Helena, Constantine) via Britannica; UNESCO 'Old City of Jerusalem and its Walls'.
+
+  BLD-012 Dome of the Rock
+    DATE source:          Founding inscription and dedication dates (691-692 CE, Abd al-Malik) in Britannica 'Dome of the Rock' and early Islamic sources.
+    FACT source:          Architectural scholarship (dome diameter, mosaics, 1993 gilding) in Britannica and Museum With No Frontiers 'Discover Islamic Art'.
+    NAMES/PLACES source:  Umayyad historical documentation; UNESCO 'Old City of Jerusalem and its Walls' (Haram al-Sharif/Temple Mount).
+
+  BLD-013 Golden Temple
+    DATE source:          Foundation (1588-1604, Guru Arjan) and gilding (1809-1830, Ranjit Singh) dates in Britannica 'Harmandir Sahib' and SGPC records.
+    FACT source:          Sikh historical and architectural scholarship via Britannica and Shiromani Gurdwara Parbandhak Committee (sgpc.net).
+    NAMES/PLACES source:  Sikh historical records (Guru Arjan Dev, Maharaja Ranjit Singh) via Britannica; SGPC documentation for Amritsar.
+
+  BLD-014 Bayon
+    DATE source:          Construction dates (c. 1190-1210, Jayavarman VII) in UNESCO 'Angkor' documentation and Britannica 'Bayon'.
+    FACT source:          Archaeological and architectural scholarship of the Angkor conservators (EFEO) and APSARA National Authority.
+    NAMES/PLACES source:  Khmer epigraphy and royal records (Jayavarman VII) as presented in UNESCO and Britannica.
+
+  BLD-015 Borobudur
+    DATE source:          Construction dates (c. 780-840 CE, Sailendra dynasty) in UNESCO 'Borobudur Temple Compounds' and Britannica.
+    FACT source:          Archaeological scholarship (stupa count, relief panels, restoration campaigns) in UNESCO nomination dossier and Britannica.
+    NAMES/PLACES source:  Sailendra royal records and Raffles-era documentation via Britannica; UNESCO listing for Central Java.
+
+  BLD-016 Cathedral of Christ the Saviour
+    DATE source:          Construction/demolition/rebuild dates (1839-1883; 1931; 1995-2000) in standard histories of Moscow.
+    FACT source:          Architectural histories of the cathedral and its Soviet-era demolition and reconstruction.
+    NAMES/PLACES source:  Tsarist and Soviet-era documentation (Alexander I, Stalin) via Britannica 'Moscow' and cathedral publications.
+
+  BLD-017 Western Wall
+    DATE source:          Construction date (20 BCE, Herod the Great) and later history (70 CE; 1967) in Britannica 'Western Wall' and archaeological reports of the Temple Mount excavations.
+    FACT source:          Scholarship on the Herodian retaining wall, prayer traditions and plaza history via Britannica and Western Wall Heritage Foundation (thekotel.org).
+    NAMES/PLACES source:  Historical documentation of Herod's Temple Mount; administration records of the Western Wall Heritage Foundation; UNESCO 'Old City of Jerusalem and its Walls'.
+
+  BLD-018 Potala Palace
+    DATE source:          Construction chronology (637 CE; 1645; 1648; 1690-1694) in UNESCO 'Historic Ensemble of the Potala Palace, Lhasa' and Britannica 'Potala Palace'.
+    FACT source:          Architectural facts (3,700 m elevation, 117 m height, 13 storeys, gilded stupas) in UNESCO nomination dossier and Britannica.
+    NAMES/PLACES source:  Tibetan historical records of the Fifth Dalai Lama (Ngawang Lobsang Gyatso) and regent Sangye Gyatso via Britannica; UNESCO inscription records.

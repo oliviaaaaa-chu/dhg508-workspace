@@ -1,0 +1,96 @@
+Descriptions of the six building photos in images/
+(Each description is based on viewing the photo itself; match to the
+buildings.db record follows at the end of each entry.)
+========================================================================
+
+bld-01.jpg (id 1)
+----------
+A long, three-story brick building, wider than tall, photographed
+straight-on from across an open grassy field. Ground floor: a continuous
+arcade of round arches running the full length of the facade. Upper two
+floors: open colonnaded balconies with regular rows of columns. Every
+level is crowded with students standing along the colonnades. Flat
+roofline with a row of chimneys/vent stacks; fully Western/colonial
+style, no Chinese roof. Foreground is empty grass; overcast sky; sepia
+tone, likely 1900s-1910s.
+
+Match: id 1 - Martin Hall (马丁堂), 1906-1907. Lingnan's first permanent
+building and China's first reinforced-concrete mixed-structure building;
+designed by Stoughton & Stoughton. (LUAR_PIC image 1001)
+
+bld-02.jpg (id 2)
+----------
+An interior shot, not an exterior: a large reading room. Long wooden
+tables covered with books, papers and newspapers. Rows of students
+(young men in white shirts) seated, reading and writing. Tall bookshelves
+packed with bound volumes line both side walls; square brick piers rise
+between them. Pendant lamps hang from the ceiling on long cords; tall
+windows in the background. Busy 1920s-era library reading room, sepia.
+
+Match: id 2 - Grand Hall (格蘭堂), 1915-1916. Nicknamed the "Big Clock
+Tower" (大钟楼); its east second floor long housed the library.
+(LUAR_PIC image 1004)
+Note: hard case for a text-matching ("blind") agent - no exterior is
+visible; only the DB description reveals it is inside Grand Hall.
+
+bld-03.jpg (id 3)
+----------
+A large multi-story building in Chinese revival style. Layered
+hip-and-gable tiled roofs: a big central ridge plus stepped, receding
+roof tiers on each side, with small dormer-like structures along the
+ridgeline. A pale vertical panel at the center of the facade. Regular
+rows of windows across four floors; the two lower floors have arcaded
+loggias with arched openings; small balconies with railings at the
+sides. Brick, symmetrical, wings stepping down from the tall central
+section. Foreground: lawn/road with shrubs and a palm-like plant, a
+person walking at bottom right. Sepia.
+
+Match: id 3 - Java Hall (爪哇堂), 1920-1922. First student dormitory,
+funded by overseas Chinese in Java; four stories, completed 1922.
+(LUAR_PIC image 1011)
+
+bld-04.jpg (id 4)
+----------
+An octagonal pavilion rather than a large building: pyramidal tiled roof
+(八角攒尖顶), ridges sweeping up from eight corners to a finial, with
+pronounced upturned eaves. Open colonnade of wooden columns beneath; a
+large bronze bell hangs inside. Raised stone terrace with carved
+balustrade, steps at the front. Stands in the middle of a broad lawn
+with light cross-paths; two Western-style buildings flank it (brick
+building left, lighter three-story building right). Sepia tone.
+
+Match: id 4 - Xing Pavilion (惺亭), 1928. Funded by the 1928 graduating
+class "惺社" to commemorate three martyrs (史坚如, 区励周, 许耀章);
+designed by Henry Murphy; the bell was struck to signal class times.
+(LUAR_PIC image 1010)
+Note: near-duplicate of the exercise's query/query.jpg.
+
+bld-05.jpg (id 5)
+----------
+A tall steel lattice/truss water tower, photographed from below.
+Cylindrical water tank perched on top - a plain metal drum wider than
+the slender tower beneath. Four legs braced by repeated X-shaped
+cross-bracing with horizontal ties; a ladder runs up the frame; legs
+widen at the base onto a low masonry plinth behind a fence. Dark trees
+frame both sides; the bottom edge shows water with the tower's
+reflection. Darker, more contrasty tone than the other photos.
+
+Match: id 5 - Water Tower (自来水塔), year unknown. Campus water-supply
+tower inside the school gate; the DB's thinnest record - no date, no
+known designer, one line of history. (LUAR_PIC image 1012)
+
+bld-06.jpg (id 6)
+----------
+A row of simple, single-story wooden bungalows stretching across a
+raised slope, several units joined end-to-end. Low, shallow-pitched
+roofs with small chimneys/vents; wide verandas and covered walkways in
+front. Light timber-plank walls - clearly temporary, not masonry.
+Rural, undeveloped setting: rough scrub and cultivated field plots in
+the foreground, trees at both ends, tiny figures at far right. Sepia,
+panoramic feel.
+
+Match: id 6 - Log Cabins (木板屋), 1904. Earliest temporary schoolhouses
+of Lingnan College after moving to the Kanglecun site; at the time the
+whole school was just two large wooden buildings, predating every other
+structure in the database. Source: 1913 alumni account (LUAR_PIC
+image 1000)
